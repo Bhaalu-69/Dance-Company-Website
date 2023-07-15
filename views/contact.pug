@@ -1,0 +1,21 @@
+extends base.pug
+
+block scripts
+    style 
+        include ../static/styleContactPage.css
+
+block content
+    section#contact-form-section 
+        div Contact Us 
+        div
+            form(action="/contact", method="post") 
+                input(type="text", class="myInput", name="name", placeholder="Name", required)
+                input(type="number", class="myInput", name="age", placeholder="Age", required)
+                input(type="text", class="myInput", name="email", placeholder="Email", required)
+                input(type="tel", class="myInput", name="phone", placeholder="Phone Number", required)
+                textarea(name="message", class="myInput", rows="5", cols="29", placeholder="Message")
+                button(class="btn")
+                    | Submit
+    if alert
+      script.
+        alert("#{alert}")

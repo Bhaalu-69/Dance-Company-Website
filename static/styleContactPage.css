@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#contact-form-section {
+    color: white;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+#contact-form-section div:nth-child(1){
+    font-size: 3rem;
+}
+#contact-form-section div form{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgb(249, 249, 249);
+}
+#contact-form-section div form input {
+    margin: 0.5rem;
+    font-size: 1.1rem;
+}
+#contact-form-section .myInput {
+    border-radius: 13px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+#contact-form-section textarea {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+}
+#contact-form-section .btn{
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 0.1rem 1rem;
+    margin: 0.5rem;
+}
+#contact-form-section .btn:hover{
+    cursor: pointer;
+    background-color: darkred;
+    color: white;
+}

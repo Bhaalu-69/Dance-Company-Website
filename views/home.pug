@@ -1,0 +1,33 @@
+extends base.pug
+
+block content
+  section#introSection
+    div Welcome to Bhaalu's Dance Academy
+    div Dance, Sleep, Repeat!
+  section#missionsSection
+    h3 Our Missions 
+    div
+      ul
+        li.missionsCards 
+          div Discovering your dance potential
+          img(src="../static/images/cardBg1.jpg" alt="")
+        li.missionsCards 
+          div Elevating your dance expreience
+          img(src="../static/images/cardBg2.jpg" alt="")
+        li.missionsCards 
+          div Providing performance opportunities
+          img(src="../static/images/cardBg3.jpg" alt="")
+  section#sponsorsSection
+    h3 Our Sponsors
+    div
+      ul
+        li #[a(href="/") ]
+          img(src="../static/images/sponsors/sponsor1.png" alt="").invertImageColour
+        li #[a(href="/") ]
+          img(src="../static/images/sponsors/sponsor2.png" alt="").invertImageColour
+        li #[a(href="/") ]
+          img(src="../static/images/sponsors/sponsor3.png" alt="").invertImageColour
+        li #[a(href="/") ]
+          img(src="../static/images/sponsors/sponsor4.png" alt="").invertImageColour
+        li #[a(href="/") ]
+          img(src="../static/images/sponsors/sponsor5.png" alt="")    
