@@ -1,19 +1,19 @@
-const mongoose = require("mongoose");
-const config = require("./config.json");
-main().catch((err) => console.log(err));
+// const mongoose = require("mongoose");
+// const config = require("./config.json");
+// main().catch((err) => console.log(err));
 
-var Contact;
-async function main() {
-  await mongoose.connect(config.databaseConnectionString);
-  const contactSchema = new mongoose.Schema({
-    name: String,
-    age: Number,
-    email: String,
-    phone: Number,
-    message: String
-  });
-  Contact = mongoose.model('Contact', contactSchema);
-}
+// var Contact;
+// async function main() {
+//   await mongoose.connect(config.databaseConnectionString);
+//   const contactSchema = new mongoose.Schema({
+//     name: String,
+//     age: Number,
+//     email: String,
+//     phone: Number,
+//     message: String
+//   });
+//   Contact = mongoose.model('Contact', contactSchema);
+// }
 
 const express = require("express");
 const path = require("path");
